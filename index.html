@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self Help books</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/favicon.png" type="images/favicon-icon">
+</head>
+
+<body>
+     <header id="header">
+        <a href="#" class="logo">Self help</a>
+        <ul>
+            <li><a href="books.html" class="idk">Book Collection</a></li>
+        </ul>
+    </header>
+    <section>
+        <h2 id="text">Book Store</h2>
+        <img src="images/bird1.png" id="bird1">
+        <img src="images/bird2.png" id="bird2">
+        <img src="images/forest.png" id="forest">
+        <a href="#sec" id="btn">Introduction</a>
+        <img src="images/rocks.png" id="rocks">
+        <img src="images/water.png" id="water">
+    </section>
+    <div class="sec" id="sec">
+        <h2>Introduction to the website</h2>
+        <p class="white">
+        <div class="heads">Why this Website?</div><br>
+        <div class="txt">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nihil enim, nam, ipsam veniam iste inventore
+            fuga, sequi quae sit ducimus. Assumenda illo recusandae pariatur corporis adipisci id dicta repudiandae
+            odio? Praesentium esse, eum nostrum amet doloribus iste numquam nesciunt fuga quas assumenda reiciendis,
+            sapiente totam nam molestias? Fuga neque veniam dolor tempore sint quasi recusandae, quaerat vel, reiciendis
+            sit a deserunt incidunt nulla nisi cupiditate repudiandae. Dolore, non itaque. Sed amet quisquam
+            consequuntur hic ab! Voluptas eius cupiditate praesentium molestiae cumque temporibus doloribus ducimus id
+            dolores error adipisci libero fugit quam iste earum, veritatis voluptatum ipsam magnam saepe. Recusandae?
+        </div>
+
+        <div class="heads">How does this website help us?</div><br>
+        <div class="txt">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime sapiente officiis at debitis quas,
+            consectetur laudantium, doloremque dolore sint incidunt possimus ipsum. Ex atque nam corrupti provident
+            beatae tempora laudantium repudiandae? Nesciunt velit, explicabo voluptates qui dolore, tenetur aut porro
+            natus nam vitae iure blanditiis laudantium ipsam possimus. Delectus a officia assumenda velit non, facilis
+            ut aut magnam hic, illo nihil numquam vitae. Aspernatur optio doloribus consectetur laudantium eos corrupti
+            corporis enim labore facere, quae veritatis incidunt vitae voluptatum et ea quidem veniam in dignissimos
+            quisquam, minus adipisci harum magni? Dolores nobis reprehenderit incidunt architecto et quos facere quas,
+            modi error distinctio hic voluptas alias quasi commodi nam impedit doloribus. Pariatur vel enim magnam
+            sapiente a eaque nam sed nisi adipisci autem sint, quaerat accusantium vitae quos harum aspernatur? Tempore,
+            laborum perferendis aperiam quis distinctio animi dolorem, mollitia, voluptatum quia magnam ea. Perferendis
+            eius quia rem ipsam nam illo error provident itaque iure impedit minus, quo enim veritatis maxime minima?
+            Non nihil voluptatibus ex eaque quis laboriosam excepturi alias. Quis, dolorem ipsam. Quam ex vel rerum
+            culpa quae tempora ipsa nam obcaecati? Quisquam, provident voluptas corporis culpa impedit alias dolor
+            adipisci maxime incidunt. Est sequi minus, saepe, nostrum perspiciatis ea dignissimos libero eos esse
+            aperiam similique aliquid error sit corrupti porro sapiente fugit quae, itaque eligendi illum repellendus!
+            Ullam quidem ut eius. Tempore eligendi consequuntur dolor id ad architecto, suscipit cum nostrum ab
+            repellendus nisi nemo pariatur eaque, odit ratione. Nesciunt ex aliquid tempore aliquam at, debitis illum,
+            porro necessitatibus doloremque sed culpa nam amet. Necessitatibus rem corrupti minima ad? Deleniti, laborum
+            tempore dolorum est veritatis deserunt quidem nihil sed dolorem! Numquam asperiores repellendus ullam culpa,
+            quos, pariatur voluptatem reprehenderit aperiam laborum dolores minima voluptatibus quibusdam tenetur ut
+            praesentium dolorem libero laudantium nulla consectetur. Quo maxime hic sint asperiores vero?
+        </div>
+    </div>
+    </p>
+
+    </div>
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+
+        window.addEventListener('scroll', function () {
+            let value = window.scrollY;
+
+            text.style.top = 50 + value * -0.5 + '%';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * 2 + 'px';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * -5 + 'px';
+            rocks.stlye.top = value * -12 + 'px';
+        })
+    </script>
+</body>
+
+</html>
